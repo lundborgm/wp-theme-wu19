@@ -1,0 +1,17 @@
+/**
+ * Theme Name: wp-theme-wu19
+ * Theme URI:
+ * Description: The WordPress theme for wu19
+ * Version: 1.0.0
+ * Author: Michaela Lundborg
+ * Author URI:
+ */
+
+a:hover {
+  color: pink;
+  background-color: pink;
+}
+
+a:visited {
+  color: maroon;
+}
