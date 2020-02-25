@@ -19,5 +19,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('bootstrap');
 });
 
-// add thumbnail-pics to blog-page
+// Add thumbnail-pics to blog-page
 add_theme_support('post-thumbnails');
+
+require get_template_directory().'/post-types/student.php';
+require get_template_directory().'/taxonomies/skill.php';
