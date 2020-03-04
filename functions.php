@@ -22,5 +22,13 @@ add_action('wp_enqueue_scripts', function () {
 // Add thumbnail-pics to blog-page
 add_theme_support('post-thumbnails');
 
+add_theme_support('soil-clean-up');
+add_theme_support('soil-disable-asset-versioning');
+add_theme_support('soil-disable-trackbacks');
+add_theme_support('soil-js-to-footer');
+add_theme_support('soil-nice-search');
+add_theme_support('soil-relative-urls');
+
 require get_template_directory().'/post-types/student.php';
 require get_template_directory().'/taxonomies/skill.php';
+require get_template_directory().'/fields/student.php';

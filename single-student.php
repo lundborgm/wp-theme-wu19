@@ -10,8 +10,13 @@
               <span><?php the_date(); ?></span>
               <h1><?php the_title(); ?></h1>
 
+            <?php if(get_field('email') || get_field('github_profile')): ?>
+                <p><a href="<?php the_field('email'); ?>"><?php the_field('email'); ?></a></p>
+                <p><a href="<?php the_field('github_profile'); ?>">GitHub Profile</a></p>
+            <?php endif; ?>
+
               <?php the_content(); ?>
-              
+
               <div class="float-left">
                <?php previous_post_link(); ?>
              </div>
